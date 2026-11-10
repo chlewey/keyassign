@@ -1,0 +1,15 @@
+<Window x:Class="KeyAssign.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Key Assign" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="24">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Key Assign" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" />
+            <TextBlock Text="Keyboard settings and key assignments for Windows 11."
+                       Margin="0,8,0,0" HorizontalAlignment="Center" />
+            <TextBlock Text="Skeleton: nothing is changed on this machine yet."
+                       Margin="0,4,0,0" Foreground="Gray" HorizontalAlignment="Center" />
+        </StackPanel>
+    </Grid>
+</Window>
