@@ -1,9 +1,15 @@
 # CLAUDE.md
 
-Key Assign: a Windows 11 app to change keyboard settings and assign keys
-(remaps, disabled keys, layouts, keyboard settings), with every change
-reversible. See `README.md` (English), `LEEME.md` (Spanish) and
-`docs/ROADMAP.md`, whose open decisions D1–D4 are the owner's to make.
+Key Assign: a Windows 11 keyboard layout editor, graphical and by text file,
+with AltGr dead keys, layers (one-shot and sustained), prebuilt packs, and
+transparent install over the layout in use. See `README.md` (English),
+`LEEME.md` (Spanish), `docs/REQUIREMENTS.md` (requirement IDs R1.1–R7.5, spikes
+S1–S5) and `docs/ROADMAP.md` (milestones M0–M9; its open decisions D1–D4 are the
+owner's to make). Cite requirement IDs in commits and PRs.
+
+- **Never modify Windows' own layout DLLs** in `System32`. Key Assign installs
+  its own layout and swaps it into the input list (R4.3).
+- Spikes that install layouts run on a throwaway VM, never on the main machine.
 
 Rules shared by all Interlecto projects (branches, deployment, visual identity, how to continue from another machine or account) are in the hub's [CLAUDE.md](https://github.com/Interlecto/ilecto/blob/master/CLAUDE.md). Where they differ, this file wins.
 

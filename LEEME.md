@@ -2,14 +2,15 @@
 
 *[Read in English](README.md)*
 
-Una aplicación para Windows 11 que cambia la configuración del teclado y asigna
-teclas: reasigna una tecla a otra, desactiva teclas que se pulsan por error y
-administra las distribuciones y opciones del teclado desde un solo lugar, con
-todos los cambios reversibles.
+Un editor de distribuciones de teclado para Windows 11. Cambia lo que escribe
+cada tecla, en modo gráfico o en un archivo de texto; añade teclas muertas y
+capas completas en AltGr, como cirílico o griego, desde paquetes ya hechos; e
+instala el resultado en lugar de la distribución que usas, con todos los cambios
+reversibles.
 
 **Estado:** esqueleto. La aplicación abre una ventana provisional y todavía no
-cambia nada en el equipo. El plan está en [docs/ROADMAP.md](docs/ROADMAP.md) (en
-inglés).
+cambia nada en el equipo. El plan está en [docs/ROADMAP.md](docs/ROADMAP.md) y los
+requisitos en [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md), ambos en inglés.
 
 ## Compilar
 

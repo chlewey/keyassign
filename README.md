@@ -2,12 +2,14 @@
 
 *[Leer en español](LEEME.md)*
 
-A Windows 11 app to change keyboard settings and assign keys: remap a key to
-another, disable keys you hit by accident, and manage layouts and keyboard
-settings from one place, with every change reversible.
+A Windows 11 keyboard layout editor. Change what each key types, graphically
+or in a text file; add dead keys and whole layers on AltGr, such as Cyrillic or
+Greek, from prebuilt packs; and install the result in place of the layout you
+use, with every change reversible.
 
 **Status:** skeleton. The app opens a placeholder window and changes nothing on
-your machine yet. See [docs/ROADMAP.md](docs/ROADMAP.md) for the plan.
+your machine yet. See [docs/ROADMAP.md](docs/ROADMAP.md) for the plan and
+[docs/REQUIREMENTS.md](docs/REQUIREMENTS.md) for the requirements.
 
 ## Build
 
