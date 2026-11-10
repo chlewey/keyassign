@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Key Assign — a keyboard layout editor for Windows 11</title>
+  <meta name="description" content="Key Assign is a keyboard layout editor for Windows 11: change what each key types, graphically or in a text file, with dead keys and AltGr layers. In development.">
+  <link rel="canonical" href="https://keyassign.ilecto.app/en/">
+  <link rel="alternate" hreflang="es" href="https://keyassign.ilecto.app/">
+  <link rel="alternate" hreflang="en" href="https://keyassign.ilecto.app/en/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Key Assign">
+  <meta property="og:description" content="Your keyboard, your way. A keyboard layout editor for Windows 11, graphical or in text.">
+  <meta property="og:url" content="https://keyassign.ilecto.app/en/">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#252a31">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="/en/">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="6" fill="#252a31" />
+          <g fill="#5d626a" stroke="#858b94" stroke-width=".5">
+            <rect x="2" y="4.5" width="12" height="11" rx="1.5" />
+            <rect x="15" y="4.5" width="12" height="11" rx="1.5" />
+            <rect x="5" y="16.5" width="12" height="11" rx="1.5" />
+            <rect x="18" y="16.5" width="12" height="11" rx="1.5" />
+          </g>
+        </svg>
+        Key Assign
+      </a>
+      <a class="lang" href="/" hreflang="es" lang="es">Español</a>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div>
+          <img class="logo-hero" src="/logo-en.svg" alt="Key Assign — your keyboard, your way" width="800" height="650">
+          <span class="badge">In development · Windows 11</span>
+          <h1>Your keyboard, your way.</h1>
+          <p class="lead">Key Assign is a keyboard layout editor. Change what each key types by drawing the keyboard on screen or in a text file, and add dead keys and whole layers on AltGr, such as Cyrillic or Greek.</p>
+          <a class="cta" href="#progress">See the progress</a>
+        </div>
+
+        <figure class="dialog" style="margin:0" aria-label="Sketch of a key's dialog">
+          <div class="dialog-head"><span>Edit key <span class="keycap">A</span></span><span>scan code 1E</span></div>
+          <table>
+            <thead><tr><th>Level</th><th class="out">Types</th></tr></thead>
+            <tbody>
+              <tr><td>Normal</td><td class="out">a</td></tr>
+              <tr><td>Shift</td><td class="out">A</td></tr>
+              <tr><td>AltGr</td><td class="out">á</td></tr>
+              <tr><td>AltGr + Shift</td><td class="out">Á</td></tr>
+            </tbody>
+          </table>
+          <div class="note">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Caps Lock inverts Shift, as it does for letters
+          </div>
+          <p class="aside">On the <span class="keycap">5</span> key, Caps Lock changes nothing: it types 5, and with Shift, %. You choose key by key. (A sketch: the interface is still being designed.)</p>
+        </figure>
+      </div>
+
+      <section>
+        <h2>A keyboard that fits what you type</h2>
+        <p class="section-lead">Changing a key in Windows usually takes old tools or programs that run in the background. Key Assign edits the layout itself, and installs it in place of the one you already use.</p>
+        <div class="features">
+          <div class="feature">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg></div>
+            <h3>Graphical editor</h3>
+            <p>The keyboard on screen, in ANSI or ISO shape. Click a key and enter its value at each level: normal, Shift, AltGr and AltGr + Shift.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div>
+            <h3>Text file</h3>
+            <p>Every layout is saved as UTF-8 text with comments, easy to read and to compare. If there's a mistake, you get its line and column.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 7 9M15 4l-2 5M4 14h16M8 14c0 4 2 6 4 6s4-2 4-6"/></svg></div>
+            <h3>Dead keys and layers</h3>
+            <p>Make any key dead, AltGr too, and edit its table on a second keyboard. A table that covers an alphabet is a layer: AltGr + K, then <em>a</em>, types <em>а</em>.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/><path d="M8 4v6M16 14v6"/></svg></div>
+            <h3>Caps Lock, key by key</h3>
+            <p>Letters invert Shift and digits don't. Key Assign lets you decide on each key, on the AltGr levels too.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></div>
+            <h3>Start from what you use</h3>
+            <p>Open the layout in use as a starting point, or make a new one. Packs (Cyrillic, Greek, IPA, typography…) will be addable to any layout.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Reversible and private</h3>
+            <p>It never touches Windows' own keyboard files: it installs its own. It saves a copy before installing so you can go back. No telemetry: everything stays on your machine.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Two ways to edit, one model</h2>
+        <p class="section-lead">The graphical editor and the text file are two views of the same thing. What you save from one opens without loss in the other.</p>
+        <div class="twin">
+          <div class="panel">
+            <h3>Graphical</h3>
+            <p class="who">To see the keyboard and try ideas.</p>
+            <ul>
+              <li>ANSI and ISO keyboards</li>
+              <li>Values typed, pasted or given as a Unicode code</li>
+              <li>A second keyboard for a dead key's variants</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Text</h3>
+            <p class="who">To save, compare and version.</p>
+<pre class="code"><span class="c"># key  scan  normal  shift  altgr  altgr+shift  caps</span>
+layout "Spanish (mine)"
+
+key 10  q        Q        @       none  shift
+key 28  dead(´)  dead(¨)  U+007B  none  -
+
+dead ´ {
+    a = á    A = Á
+    space = ´
+}</pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="progress">
+        <h2>Progress</h2>
+        <p class="section-lead">Key Assign is in development and can't be downloaded yet. The first goal is an editor that reads an installed layout, shows it and saves it as text; installing it into Windows comes after. The skeleton, the layout model and the text format are done.</p>
+        <ol class="timeline">
+          <li class="done"><span class="m">M0</span><span>Skeleton: app, keyboard logic and tests</span><span class="when">Done</span></li>
+          <li class="now"><span class="m">M1</span><span>Layout model and text format</span><span class="when">In review</span></li>
+          <li><span class="m">M2</span><span>Proofs of concept on building, reading and installing layouts</span><span class="when">Pending</span></li>
+          <li><span class="m">M3</span><span>Read the layout in use and view it on an ANSI or ISO keyboard</span><span class="when">Pending</span></li>
+          <li><span class="m">M4</span><span>Graphical editor and a typing test area</span><span class="when">Pending</span></li>
+          <li><span class="m">M5</span><span>Build and install in place of the layout in use, with a backup</span><span class="when">Pending</span></li>
+          <li><span class="m">M6</span><span>Packs and chained dead keys</span><span class="when">Pending</span></li>
+          <li><span class="m">M7</span><span>Sustained layers</span><span class="when">Pending</span></li>
+          <li><span class="m">M8</span><span>More physical keyboards (JIS, ABNT2, KS), <code>.klc</code> import and other changes</span><span class="when">Pending</span></li>
+          <li><span class="m">M9</span><span>Version 1.0: installer, English and Spanish, accessibility</span><span class="when">Pending</span></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Key Assign · MIT license</span>
+      <span>A project by <a href="https://ilecto.app/">Interlecto</a> · <a href="https://github.com/chlewey/keyassign">Code on GitHub</a></span>
+      <a href="/" hreflang="es" lang="es">Leer en español</a>
+    </footer>
+  </div>
+</body>
+</html>

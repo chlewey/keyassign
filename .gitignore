@@ -485,3 +485,6 @@ $RECYCLE.BIN/
 
 # The *.app rule above is for macOS bundles; on Windows it also matches this folder.
 !/src/KeyAssign.App/
+
+# Cloudflare Wrangler local state (site/)
+.wrangler/

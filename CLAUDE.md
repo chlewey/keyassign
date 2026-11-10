@@ -26,6 +26,13 @@ Rules shared by all Interlecto projects (branches, deployment, visual identity, 
 - `src/KeyAssign.Core/` — logic without UI. `Keys/ScancodeMap.cs` encodes and
   decodes the `Scancode Map` registry value; it doesn't touch the registry.
 - `tests/KeyAssign.Core.Tests/` — tests for Core.
+- `site/` — project page for `keyassign.ilecto.app`: static, bilingual (ES at
+  `/`, EN at `/en/`), no build step, system fonts and nothing loaded from other
+  sites (R7.2). Same structure as Contarte's. Deploy from `site/` with
+  `npx wrangler deploy` (worker `keyassign-site`), only when asked. Keep both
+  languages and its progress section in step with `docs/ROADMAP.md`. The app
+  icon is `site/public/favicon.svg`: four keys, second row shifted a quarter
+  key right.
 
 ## Commands
 
