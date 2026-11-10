@@ -9,7 +9,8 @@ use, with every change reversible.
 
 **Status:** skeleton. The app opens a placeholder window and changes nothing on
 your machine yet. See [docs/ROADMAP.md](docs/ROADMAP.md) for the plan and
-[docs/REQUIREMENTS.md](docs/REQUIREMENTS.md) for the requirements.
+[docs/REQUIREMENTS.md](docs/REQUIREMENTS.md) for the requirements. Project page:
+<https://keyassign.ilecto.app>.
 
 ## Build
 
@@ -28,6 +29,8 @@ dotnet run --project src/KeyAssign.App
   registry format.
 - `tests/KeyAssign.Core.Tests/` — xUnit tests for Core.
 - `docs/` — roadmap and design notes.
+- `site/` — the project page, a static Cloudflare Workers site (see
+  [site/README.md](site/README.md)).
 
 ## License
 

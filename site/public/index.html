@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Key Assign — editor de distribuciones de teclado para Windows 11</title>
+  <meta name="description" content="Key Assign es un editor de distribuciones de teclado para Windows 11: cambia lo que escribe cada tecla en modo gráfico o en un archivo de texto, con teclas muertas y capas en AltGr. En desarrollo.">
+  <link rel="canonical" href="https://keyassign.ilecto.app/">
+  <link rel="alternate" hreflang="es" href="https://keyassign.ilecto.app/">
+  <link rel="alternate" hreflang="en" href="https://keyassign.ilecto.app/en/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Key Assign">
+  <meta property="og:description" content="Tu teclado, a tu manera. Editor de distribuciones de teclado para Windows 11, gráfico o en texto.">
+  <meta property="og:url" content="https://keyassign.ilecto.app/">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#252a31">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="/">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="6" fill="#252a31" />
+          <g fill="#5d626a" stroke="#858b94" stroke-width=".5">
+            <rect x="2" y="4.5" width="12" height="11" rx="1.5" />
+            <rect x="15" y="4.5" width="12" height="11" rx="1.5" />
+            <rect x="5" y="16.5" width="12" height="11" rx="1.5" />
+            <rect x="18" y="16.5" width="12" height="11" rx="1.5" />
+          </g>
+        </svg>
+        Key Assign
+      </a>
+      <a class="lang" href="/en/" hreflang="en" lang="en">English</a>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div>
+          <img class="logo-hero" src="/logo.svg" alt="Key Assign — tu teclado, a tu manera" width="800" height="650">
+          <span class="badge">En desarrollo · Windows 11</span>
+          <h1>Tu teclado, a tu manera.</h1>
+          <p class="lead">Key Assign es un editor de distribuciones de teclado. Cambia lo que escribe cada tecla, dibujando el teclado en pantalla o en un archivo de texto, y añade teclas muertas y capas enteras en AltGr, como cirílico o griego.</p>
+          <a class="cta" href="#avance">Ver el avance</a>
+        </div>
+
+        <figure class="dialog" style="margin:0" aria-label="Boceto del diálogo de una tecla">
+          <div class="dialog-head"><span>Editar tecla <span class="keycap">A</span></span><span>código 1E</span></div>
+          <table>
+            <thead><tr><th>Nivel</th><th class="out">Escribe</th></tr></thead>
+            <tbody>
+              <tr><td>Normal</td><td class="out">a</td></tr>
+              <tr><td>Shift</td><td class="out">A</td></tr>
+              <tr><td>AltGr</td><td class="out">á</td></tr>
+              <tr><td>AltGr + Shift</td><td class="out">Á</td></tr>
+            </tbody>
+          </table>
+          <div class="note">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Caps Lock invierte Shift, como en las letras
+          </div>
+          <p class="aside">En la tecla <span class="keycap">5</span>, Caps Lock no cambia nada: escribe 5, y con Shift, %. Se elige tecla por tecla. (Boceto: la interfaz aún está en diseño.)</p>
+        </figure>
+      </div>
+
+      <section>
+        <h2>Un teclado que se ajusta a lo que escribes</h2>
+        <p class="section-lead">Cambiar una tecla en Windows suele pedir herramientas viejas o programas que corren de fondo. Key Assign edita la distribución misma, y la instala en el lugar de la que ya usas.</p>
+        <div class="features">
+          <div class="feature">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg></div>
+            <h3>Editor gráfico</h3>
+            <p>El teclado en pantalla, en forma ANSI o ISO. Haz clic en una tecla y escribe su valor en cada nivel: normal, Shift, AltGr y AltGr + Shift.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div>
+            <h3>Archivo de texto</h3>
+            <p>Cada distribución se guarda como texto UTF-8 con comentarios, fácil de leer y de comparar. Si hay un error, se indica la línea y la columna.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 7 9M15 4l-2 5M4 14h16M8 14c0 4 2 6 4 6s4-2 4-6"/></svg></div>
+            <h3>Teclas muertas y capas</h3>
+            <p>Convierte cualquier tecla en muerta, también en AltGr, y edita su tabla en un segundo teclado. Una tabla que cubre un alfabeto es una capa: AltGr + K y luego <em>a</em> escribe <em>а</em>.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/><path d="M8 4v6M16 14v6"/></svg></div>
+            <h3>Caps Lock por tecla</h3>
+            <p>Las letras invierten Shift y los números no. Key Assign te deja decidirlo en cada tecla, incluso en los niveles de AltGr.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></div>
+            <h3>Parte de lo que ya usas</h3>
+            <p>Abre la distribución en uso como punto de partida, o crea una nueva. Los paquetes (cirílico, griego, IPA, tipografía…) se añadirán a cualquier distribución.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Reversible y privado</h3>
+            <p>No toca los archivos de teclado de Windows: instala los suyos. Antes de instalar guarda una copia para volver atrás. Sin telemetría: todo se queda en tu equipo.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Dos formas de editar, un mismo modelo</h2>
+        <p class="section-lead">El editor gráfico y el archivo de texto son dos vistas de lo mismo. Lo que guardas desde una se abre sin pérdidas en la otra.</p>
+        <div class="twin">
+          <div class="panel">
+            <h3>Gráfico</h3>
+            <p class="who">Para ver el teclado y probar ideas.</p>
+            <ul>
+              <li>Teclados ANSI e ISO</li>
+              <li>Valores tecleados, pegados o por código Unicode</li>
+              <li>Segundo teclado para las variantes de una tecla muerta</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Texto</h3>
+            <p class="who">Para guardar, comparar y versionar.</p>
+<pre class="code"><span class="c"># tecla  código  normal  shift  altgr  altgr+shift  caps</span>
+layout "Español (mío)"
+
+key 10  q        Q        @       none  shift
+key 28  dead(´)  dead(¨)  U+007B  none  -
+
+dead ´ {
+    a = á    A = Á
+    space = ´
+}</pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="avance">
+        <h2>Avance</h2>
+        <p class="section-lead">Key Assign está en desarrollo y todavía no se puede descargar. El primer objetivo es un editor que lea una distribución instalada, la muestre y la guarde como texto; instalarla en Windows viene después. El esqueleto, el modelo de distribuciones y el formato de texto están hechos.</p>
+        <ol class="timeline">
+          <li class="done"><span class="m">M0</span><span>Esqueleto: aplicación, lógica del teclado y pruebas</span><span class="when">Terminado</span></li>
+          <li class="now"><span class="m">M1</span><span>Modelo de distribución y formato de texto</span><span class="when">En revisión</span></li>
+          <li><span class="m">M2</span><span>Pruebas de concepto sobre cómo construir, leer e instalar distribuciones</span><span class="when">Pendiente</span></li>
+          <li><span class="m">M3</span><span>Leer la distribución en uso y verla en un teclado ANSI o ISO</span><span class="when">Pendiente</span></li>
+          <li><span class="m">M4</span><span>Editor gráfico y área de prueba de escritura</span><span class="when">Pendiente</span></li>
+          <li><span class="m">M5</span><span>Compilar e instalar en lugar de la distribución en uso, con copia de seguridad</span><span class="when">Pendiente</span></li>
+          <li><span class="m">M6</span><span>Paquetes y teclas muertas encadenadas</span><span class="when">Pendiente</span></li>
+          <li><span class="m">M7</span><span>Capas sostenidas</span><span class="when">Pendiente</span></li>
+          <li><span class="m">M8</span><span>Más teclados físicos (JIS, ABNT2, KS), importar <code>.klc</code> y otros cambios</span><span class="when">Pendiente</span></li>
+          <li><span class="m">M9</span><span>Versión 1.0: instalador, español e inglés, accesibilidad</span><span class="when">Pendiente</span></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Key Assign · Licencia MIT</span>
+      <span>Un proyecto de <a href="https://ilecto.app/">Interlecto</a> · <a href="https://github.com/chlewey/keyassign">Código en GitHub</a></span>
+      <a href="/en/" hreflang="en" lang="en">Read in English</a>
+    </footer>
+  </div>
+</body>
+</html>

@@ -10,7 +10,8 @@ reversibles.
 
 **Estado:** esqueleto. La aplicación abre una ventana provisional y todavía no
 cambia nada en el equipo. El plan está en [docs/ROADMAP.md](docs/ROADMAP.md) y los
-requisitos en [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md), ambos en inglés.
+requisitos en [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md), ambos en inglés. La
+página del proyecto está en <https://keyassign.ilecto.app>.
 
 ## Compilar
 
@@ -29,6 +30,8 @@ dotnet run --project src/KeyAssign.App
   valor de registro `Scancode Map`.
 - `tests/KeyAssign.Core.Tests/`: pruebas xUnit de Core.
 - `docs/`: hoja de ruta y notas de diseño.
+- `site/`: la página del proyecto, un sitio estático en Cloudflare Workers
+  (véase [site/README.md](site/README.md), en inglés).
 
 ## Licencia
 
