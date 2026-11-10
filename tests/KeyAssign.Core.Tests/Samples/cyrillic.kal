@@ -1,0 +1,33 @@
+# Cyrillic (phonetic) as a pack: AltGr+K opens a layer, so AltGr+K then a types а.
+# The trigger is a dead key whose accent is a character nobody types, U+2328.
+# After it only the first letter is Cyrillic: AltGr+K, a, b types "аb".
+pack "Cyrillic (phonetic, sample)"
+
+key 25  none  none  dead(U+2328)  none  -
+
+dead U+2328 {
+    a = а    A = А
+    b = б    B = Б
+    v = в    V = В
+    g = г    G = Г
+    d = д    D = Д
+    e = е    E = Е
+    z = з    Z = З
+    i = и    I = И
+    j = й    J = Й
+    k = к    K = К
+    l = л    L = Л
+    m = м    M = М
+    n = н    N = Н
+    o = о    O = О
+    p = п    P = П
+    r = р    R = Р
+    s = с    S = С
+    t = т    T = Т
+    u = у    U = У
+    f = ф    F = Ф
+    h = х    H = Х
+    c = ц    C = Ц
+    y = ы    Y = Ы
+    space = space
+}
