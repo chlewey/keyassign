@@ -25,6 +25,8 @@ Rules shared by all Interlecto projects (branches, deployment, visual identity, 
 - `src/KeyAssign.App/` — WPF app. Placeholder window only.
 - `src/KeyAssign.Core/` — logic without UI. `Keys/ScancodeMap.cs` encodes and
   decodes the `Scancode Map` registry value; it doesn't touch the registry.
+  `Layouts/` is the layout model and its text format (`Layouts/Format/`, spec in
+  `docs/FORMAT.md`).
 - `tests/KeyAssign.Core.Tests/` — tests for Core.
 - `site/` — project page for `keyassign.ilecto.app`: static, bilingual (ES at
   `/`, EN at `/en/`), no build step, system fonts and nothing loaded from other

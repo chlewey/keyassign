@@ -33,7 +33,7 @@ their IDs, are in [REQUIREMENTS.md](REQUIREMENTS.md).
 Solution with a WPF app, Core library and xUnit tests; `ScancodeMap` encoder and
 decoder; README, LEEME and MIT license.
 
-### M1. Layout model and text format
+### M1. Layout model and text format (done)
 
 R1.2, R1.3, R1.4, R3.1, R3.3, R3.4, R5.1.
 

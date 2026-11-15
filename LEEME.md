@@ -8,7 +8,8 @@ capas completas en AltGr, como cirílico o griego, desde paquetes ya hechos; e
 instala el resultado en lugar de la distribución que usas, con todos los cambios
 reversibles.
 
-**Estado:** esqueleto. La aplicación abre una ventana provisional y todavía no
+**Estado:** desarrollo inicial. El modelo de distribución y el formato de texto
+están hechos (M1); la aplicación aún abre una ventana provisional y todavía no
 cambia nada en el equipo. El plan está en [docs/ROADMAP.md](docs/ROADMAP.md) y los
 requisitos en [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md), ambos en inglés. La
 página del proyecto está en <https://keyassign.ilecto.app>.

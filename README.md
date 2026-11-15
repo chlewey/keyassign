@@ -7,7 +7,8 @@ or in a text file; add dead keys and whole layers on AltGr, such as Cyrillic or
 Greek, from prebuilt packs; and install the result in place of the layout you
 use, with every change reversible.
 
-**Status:** skeleton. The app opens a placeholder window and changes nothing on
+**Status:** early development. The layout model and text format are done (M1);
+the app still opens a placeholder window and changes nothing on
 your machine yet. See [docs/ROADMAP.md](docs/ROADMAP.md) for the plan and
 [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md) for the requirements. Project page:
 <https://keyassign.ilecto.app>.
