@@ -22,6 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Samples\**\*.kal" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\src\KeyAssign.Core\KeyAssign.Core.csproj" />
   </ItemGroup>
 

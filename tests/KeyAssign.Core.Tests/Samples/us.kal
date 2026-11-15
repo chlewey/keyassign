@@ -1,0 +1,58 @@
+# United States QWERTY, main block. The caps column is left out on purpose:
+# letters then invert Shift under Caps Lock and every other key ignores it.
+# Characters the format reserves are written as U+XXXX: " # = { }
+layout "US (sample)"
+
+# key  scan  normal  shift   altgr  altgr+shift
+key 29  `       ~       none    none
+key 02  1       !       none    none
+key 03  2       @       none    none
+key 04  3       U+0023  none    none
+key 05  4       $       none    none
+key 06  5       %       none    none
+key 07  6       ^       none    none
+key 08  7       &       none    none
+key 09  8       *       none    none
+key 0A  9       (       none    none
+key 0B  0       )       none    none
+key 0C  -       _       none    none
+key 0D  U+003D  +       none    none
+
+key 10  q  Q  none  none
+key 11  w  W  none  none
+key 12  e  E  none  none
+key 13  r  R  none  none
+key 14  t  T  none  none
+key 15  y  Y  none  none
+key 16  u  U  none  none
+key 17  i  I  none  none
+key 18  o  O  none  none
+key 19  p  P  none  none
+key 1A  [  U+007B  none  none
+key 1B  ]  U+007D  none  none
+key 2B  \  |       none  none
+
+key 1E  a  A  none  none
+key 1F  s  S  none  none
+key 20  d  D  none  none
+key 21  f  F  none  none
+key 22  g  G  none  none
+key 23  h  H  none  none
+key 24  j  J  none  none
+key 25  k  K  none  none
+key 26  l  L  none  none
+key 27  ;  :  none  none
+key 28  '  U+0022  none  none
+
+key 2C  z  Z  none  none
+key 2D  x  X  none  none
+key 2E  c  C  none  none
+key 2F  v  V  none  none
+key 30  b  B  none  none
+key 31  n  N  none  none
+key 32  m  M  none  none
+key 33  ,  <  none  none
+key 34  .  >  none  none
+key 35  /  ?  none  none
+
+key 39  U+0020  U+0020  none  none

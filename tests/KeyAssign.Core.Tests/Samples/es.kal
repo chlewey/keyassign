@@ -1,0 +1,76 @@
+# Spanish (Spain), ISO keyboard, main block. Shows dead keys at the normal and
+# shift levels, AltGr outputs, the ISO-only key (56) and explicit Caps Lock settings.
+layout "Spanish (sample)"
+base "Spanish (Spain)"
+
+# key  scan  normal   shift    altgr   altgr+shift  caps
+key 29  º       ª        \        none         -
+key 02  1       !        |        none         -
+key 03  2       U+0022   @        none         -
+key 04  3       ·        U+0023   none         -
+key 05  4       $        ~        none         -
+key 06  5       %        €        none         -
+key 07  6       &        ¬        none         -
+key 08  7       /        none     none         -
+key 09  8       (        none     none         -
+key 0A  9       )        none     none         -
+key 0B  0       U+003D   none     none         -
+key 0C  '       ?        none     none         -
+key 0D  ¡       ¿        none     none         -
+
+key 10  q  Q  none  none  shift
+key 11  w  W  none  none  shift
+key 12  e  E  €     none  shift
+key 13  r  R  none  none  shift
+key 14  t  T  none  none  shift
+key 15  y  Y  none  none  shift
+key 16  u  U  none  none  shift
+key 17  i  I  none  none  shift
+key 18  o  O  none  none  shift
+key 19  p  P  none  none  shift
+key 1A  dead(`)  dead(^)  [  none  -
+key 1B  +        *        ]  none  -
+
+key 1E  a  A  none  none  shift
+key 27  ñ  Ñ  none  none  shift
+key 28  dead(´)  dead(¨)  U+007B  none  -
+key 2B  ç  Ç  U+007D  none  shift
+
+key 56  <  >  |  none  -
+
+# Dead keys. "space" is the accent typed alone.
+dead ´ {
+    a = á    A = Á
+    e = é    E = É
+    i = í    I = Í
+    o = ó    O = Ó
+    u = ú    U = Ú
+    space = ´
+}
+
+dead ¨ {
+    a = ä    A = Ä
+    e = ë    E = Ë
+    i = ï    I = Ï
+    o = ö    O = Ö
+    u = ü    U = Ü
+    space = ¨
+}
+
+dead ` {
+    a = à    A = À
+    e = è    E = È
+    i = ì    I = Ì
+    o = ò    O = Ò
+    u = ù    U = Ù
+    space = `
+}
+
+dead ^ {
+    a = â    A = Â
+    e = ê    E = Ê
+    i = î    I = Î
+    o = ô    O = Ô
+    u = û    U = Û
+    space = ^
+}
