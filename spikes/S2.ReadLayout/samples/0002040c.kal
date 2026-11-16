@@ -1,0 +1,600 @@
+# Key Assign layout file; see docs/FORMAT.md.
+layout "French (Standard, BÉPO)"
+
+#    scan  normal   shift   altgr    altgr+shift  caps
+key  02    U+0022   1       —        „            shift
+key  03    «        2       <        “            shift
+key  04    »        3       >        ”            shift
+key  05    (        4       [        ⩽            shift
+key  06    )        5       ]        ⩾            shift
+key  07    @        6       ^        none         shift
+key  08    +        7       ±        none         shift
+key  09    -        8       −        ¼            shift
+key  0A    /        9       ÷        ½            shift
+key  0B    *        0       ×        ¾            shift
+key  0C    U+003D   °       ≠        ′            -
+key  0D    %        `       ‰        ″            -
+key  10    b        B       |        none         shift
+key  11    é        É       dead(´)  none         shift
+key  12    p        P       &        §            shift
+key  13    o        O       œ        Œ            all
+key  14    è        È       dead(`)  `            shift
+key  15    dead(^)  !       ¡        none         -
+key  16    v        V       dead(ˇ)  none         shift
+key  17    d        D       dead(∞)  none         shift
+key  18    l        L       dead(/)  £            shift
+key  19    j        J       none     none         shift
+key  1A    z        Z       dead(-)  none         shift
+key  1B    w        W       none     none         shift
+key  1E    a        A       æ        Æ            all
+key  1F    u        U       ù        Ù            all
+key  20    i        I       dead(¨)  dead(˙)      shift
+key  21    e        E       €        dead(¤)      shift
+key  22    ,        ;       '        dead(,)      -
+key  23    c        C       dead(¸)  ©            shift
+key  24    t        T       dead(ᵉ)  ™            shift
+key  25    s        S       dead(ß)  ſ            shift
+key  26    r        R       dead(˘)  ®            shift
+key  27    n        N       dead(~)  none         shift
+key  28    m        M       dead(¯)  none         shift
+key  29    $        U+0023  –        ¶            -
+key  2B    ç        Ç       none     none         shift
+key  2C    à        À       \        none         shift
+key  2D    y        Y       U+007B   ‘            shift
+key  2E    x        X       U+007D   ’            shift
+key  2F    .        :       …        ·            -
+key  30    k        K       ~        ‑            shift
+key  31    ’        ?       ¿        none         -
+key  32    q        Q       dead(˚)  none         shift
+key  33    g        G       dead(µ)  †            shift
+key  34    h        H       dead(.)  ‡            shift
+key  35    f        F       dead(˛)  none         shift
+key  39    U+0020   U+202F  _        U+00A0       -
+key  56    ê        Ê       /        ^            shift
+
+dead ´ {
+    space = ´
+    A = Á
+    C = Ć
+    E = É
+    G = Ǵ
+    I = Í
+    K = Ḱ
+    L = Ĺ
+    M = Ḿ
+    N = Ń
+    O = Ó
+    P = Ṕ
+    R = Ŕ
+    S = Ś
+    U = Ú
+    V = Ǘ
+    W = Ẃ
+    Y = Ý
+    Z = Ź
+    a = á
+    c = ć
+    e = é
+    g = ǵ
+    i = í
+    k = ḱ
+    l = ĺ
+    m = ḿ
+    n = ń
+    o = ó
+    p = ṕ
+    r = ŕ
+    s = ś
+    u = ú
+    v = ǘ
+    w = ẃ
+    y = ý
+    z = ź
+    Æ = Ǽ
+    æ = ǽ
+}
+
+dead ` {
+    space = `
+    A = À
+    E = È
+    I = Ì
+    N = Ǹ
+    O = Ò
+    U = Ù
+    W = Ẁ
+    Y = Ỳ
+    a = à
+    e = è
+    i = ì
+    n = ǹ
+    o = ò
+    u = ù
+    w = ẁ
+    y = ỳ
+}
+
+dead ^ {
+    space = ^
+    A = Â
+    C = Ĉ
+    E = Ê
+    G = Ĝ
+    H = Ĥ
+    I = Î
+    J = Ĵ
+    O = Ô
+    S = Ŝ
+    U = Û
+    W = Ŵ
+    Y = Ŷ
+    Z = Ẑ
+    a = â
+    c = ĉ
+    e = ê
+    g = ĝ
+    h = ĥ
+    i = î
+    j = ĵ
+    o = ô
+    s = ŝ
+    u = û
+    w = ŵ
+    y = ŷ
+    z = ẑ
+}
+
+dead ˇ {
+    space = ˇ
+    A = Ǎ
+    C = Č
+    D = Ď
+    E = Ě
+    G = Ǧ
+    H = Ȟ
+    I = Ǐ
+    K = Ǩ
+    L = Ľ
+    N = Ň
+    O = Ǒ
+    R = Ř
+    S = Š
+    T = Ť
+    U = Ǔ
+    Z = Ž
+    a = ǎ
+    c = č
+    d = ď
+    e = ě
+    g = ǧ
+    h = ȟ
+    i = ǐ
+    j = ǰ
+    k = ǩ
+    l = ľ
+    n = ň
+    o = ǒ
+    r = ř
+    s = š
+    t = ť
+    u = ǔ
+    z = ž
+}
+
+dead ∞ {
+    space = ∞
+    - = ∞
+    V = √
+    ⩽ = ≤
+    ⩾ = ≥
+}
+
+dead / {
+    space = /
+    < = ≮
+    U+003D = ≠
+    > = ≯
+    A = Ⱥ
+    C = Ȼ
+    E = Ɇ
+    L = Ł
+    O = Ø
+    T = Ⱦ
+    c = ȼ
+    e = ɇ
+    l = ł
+    o = ø
+    ſ = ẜ
+    ⩽ = ≰
+    ⩾ = ≱
+}
+
+dead - {
+    space = -
+    B = Ƀ
+    D = Đ
+    G = Ǥ
+    H = Ħ
+    I = Ɨ
+    J = Ɉ
+    L = Ƚ
+    R = Ɍ
+    T = Ŧ
+    U = Ʉ
+    Y = Ɏ
+    Z = Ƶ
+    b = ƀ
+    d = đ
+    g = ǥ
+    h = ħ
+    j = ɉ
+    l = ƚ
+    r = ɍ
+    t = ŧ
+    y = ɏ
+    z = ƶ
+}
+
+dead ¨ {
+    space = ¨
+    A = Ä
+    E = Ë
+    H = Ḧ
+    I = Ï
+    O = Ö
+    U = Ü
+    W = Ẅ
+    X = Ẍ
+    Y = Ÿ
+    a = ä
+    e = ë
+    h = ḧ
+    i = ï
+    o = ö
+    t = ẗ
+    u = ü
+    w = ẅ
+    x = ẍ
+    y = ÿ
+}
+
+dead ˙ {
+    space = ˙
+    A = Ȧ
+    B = Ḃ
+    C = Ċ
+    D = Ḋ
+    E = Ė
+    F = Ḟ
+    G = Ġ
+    H = Ḣ
+    I = İ
+    L = Ŀ
+    M = Ṁ
+    N = Ṅ
+    O = Ȯ
+    P = Ṗ
+    R = Ṙ
+    S = Ṡ
+    T = Ṫ
+    W = Ẇ
+    X = Ẋ
+    Y = Ẏ
+    Z = Ż
+    a = ȧ
+    b = ḃ
+    c = ċ
+    d = ḋ
+    e = ė
+    f = ḟ
+    g = ġ
+    h = ḣ
+    i = ı
+    l = ŀ
+    m = ṁ
+    n = ṅ
+    o = ȯ
+    p = ṗ
+    r = ṙ
+    s = ṡ
+    t = ṫ
+    w = ẇ
+    x = ẋ
+    y = ẏ
+    z = ż
+    ſ = ẛ
+}
+
+dead ¤ {
+    space = ¤
+    % = ₰
+    A = ₳
+    B = ฿
+    C = ₵
+    D = ₯
+    F = ₣
+    L = ₤
+    M = ℳ
+    P = ₧
+    R = ₹
+    S = ₷
+    T = ₮
+    b = ₿
+    c = ¢
+    d = ₫
+    e = ₠
+    f = ƒ
+    g = ₲
+    h = ₴
+    k = ₭
+    l = ₺
+    m = ₥
+    n = ₦
+    p = ₱
+    r = ₽
+    s = ₪
+    t = ₸
+    w = ₩
+    y = ¥
+    | = ₾
+    ® = ₨
+    Ç = ₡
+    ç = ₢
+}
+
+dead , {
+    space = ,
+    S = Ș
+    T = Ț
+    s = ș
+    t = ț
+}
+
+dead ¸ {
+    space = ¸
+    C = Ç
+    D = Ḑ
+    E = Ȩ
+    G = Ģ
+    H = Ḩ
+    K = Ķ
+    L = Ļ
+    N = Ņ
+    R = Ŗ
+    S = Ş
+    T = Ţ
+    c = ç
+    d = ḑ
+    e = ȩ
+    g = ģ
+    h = ḩ
+    k = ķ
+    l = ļ
+    n = ņ
+    r = ŗ
+    s = ş
+    t = ţ
+}
+
+dead ᵉ {
+    space = ᵉ
+    ( = ⁽
+    ) = ⁾
+    + = ⁺
+    - = ⁻
+    0 = ⁰
+    1 = ¹
+    2 = ²
+    3 = ³
+    4 = ⁴
+    5 = ⁵
+    6 = ⁶
+    7 = ⁷
+    8 = ⁸
+    9 = ⁹
+    U+003D = ⁼
+}
+
+dead ß {
+    space = ß
+    - = U+00AD
+    C = ϴ
+    D = Ð
+    E = Ə
+    J = Ĳ
+    N = Ŋ
+    S = ẞ
+    T = Þ
+    c = θ
+    d = ð
+    e = ə
+    j = ĳ
+    n = ŋ
+    s = ß
+    t = þ
+    « = ‹
+    » = ›
+    ſ = ẞ
+    ‘ = ʻ
+    ’ = ʼ
+    U+202F = U+2003
+}
+
+dead ˘ {
+    space = ˘
+    A = Ă
+    E = Ĕ
+    G = Ğ
+    I = Ĭ
+    O = Ŏ
+    U = Ŭ
+    a = ă
+    e = ĕ
+    g = ğ
+    i = ĭ
+    o = ŏ
+    u = ŭ
+}
+
+dead ~ {
+    space = ~
+    - = ≃
+    < = ≲
+    U+003D = ≈
+    > = ≳
+    A = Ã
+    E = Ẽ
+    I = Ĩ
+    N = Ñ
+    O = Õ
+    U = Ũ
+    V = Ṽ
+    Y = Ỹ
+    a = ã
+    e = ẽ
+    i = ĩ
+    n = ñ
+    o = õ
+    u = ũ
+    v = ṽ
+    y = ỹ
+}
+
+dead ¯ {
+    space = ¯
+    A = Ā
+    E = Ē
+    G = Ḡ
+    I = Ī
+    O = Ō
+    U = Ū
+    Y = Ȳ
+    a = ā
+    e = ē
+    g = ḡ
+    i = ī
+    o = ō
+    u = ū
+    y = ȳ
+    Æ = Ǣ
+    æ = ǣ
+}
+
+dead ˚ {
+    space = ˚
+    A = Å
+    U = Ů
+    a = å
+    u = ů
+    w = ẘ
+    y = ẙ
+}
+
+dead µ {
+    space = µ
+    A = Α
+    B = Β
+    C = Ψ
+    D = Δ
+    E = Ε
+    F = Φ
+    G = Γ
+    H = Η
+    I = Ι
+    J = Ξ
+    K = Κ
+    L = Λ
+    M = Μ
+    N = Ν
+    O = Ο
+    P = Π
+    R = Ρ
+    S = Σ
+    T = Τ
+    U = Θ
+    V = Ω
+    X = Χ
+    Y = Υ
+    Z = Ζ
+    a = α
+    b = β
+    c = ψ
+    d = δ
+    e = ε
+    f = φ
+    g = γ
+    h = η
+    i = ι
+    j = ξ
+    k = κ
+    l = λ
+    m = μ
+    n = ν
+    o = ο
+    p = π
+    r = ρ
+    s = σ
+    t = τ
+    u = θ
+    v = ω
+    w = ς
+    x = χ
+    y = υ
+    z = ζ
+}
+
+dead . {
+    space = .
+    A = Ạ
+    B = Ḅ
+    D = Ḍ
+    E = Ẹ
+    H = Ḥ
+    I = Ị
+    K = Ḳ
+    L = Ḷ
+    M = Ṃ
+    N = Ṇ
+    O = Ọ
+    R = Ṛ
+    S = Ṣ
+    T = Ṭ
+    U = Ụ
+    V = Ṿ
+    W = Ẉ
+    Y = Ỵ
+    Z = Ẓ
+    a = ạ
+    b = ḅ
+    d = ḍ
+    e = ẹ
+    h = ḥ
+    i = ị
+    k = ḳ
+    l = ḷ
+    m = ṃ
+    n = ṇ
+    o = ọ
+    r = ṛ
+    s = ṣ
+    t = ṭ
+    u = ụ
+    v = ṿ
+    w = ẉ
+    y = ỵ
+    z = ẓ
+}
+
+dead ˛ {
+    space = ˛
+    A = Ą
+    E = Ę
+    I = Į
+    O = Ǫ
+    U = Ų
+    a = ą
+    e = ę
+    i = į
+    o = ǫ
+    u = ų
+}

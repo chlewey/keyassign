@@ -1,0 +1,213 @@
+# Key Assign layout file; see docs/FORMAT.md.
+layout "Czech"
+
+#    scan  normal   shift    altgr    altgr+shift  caps
+key  02    +        1        ~        none         -
+key  03    ě        2        dead(ˇ)  none         -
+key  04    š        3        dead(^)  none         -
+key  05    č        4        dead(˘)  none         -
+key  06    ř        5        dead(°)  none         -
+key  07    ž        6        dead(˛)  none         -
+key  08    ý        7        dead(`)  none         -
+key  09    á        8        dead(˙)  none         -
+key  0A    í        9        dead(´)  none         -
+key  0B    é        0        dead(˝)  none         -
+key  0C    U+003D   %        dead(¨)  none         -
+key  0D    dead(´)  dead(ˇ)  dead(¸)  none         -
+key  10    q        Q        \        none         shift
+key  11    w        W        |        none         shift
+key  12    e        E        €        none         shift
+key  13    r        R        none     none         shift
+key  14    t        T        none     none         shift
+key  15    z        Z        none     none         shift
+key  16    u        U        none     none         shift
+key  17    i        I        none     none         shift
+key  18    o        O        none     none         shift
+key  19    p        P        none     none         shift
+key  1A    ú        /        ÷        none         -
+key  1B    )        (        ×        none         -
+key  1E    a        A        none     none         shift
+key  1F    s        S        đ        none         shift
+key  20    d        D        Đ        none         shift
+key  21    f        F        [        none         shift
+key  22    g        G        ]        none         shift
+key  23    h        H        none     none         shift
+key  24    j        J        none     none         shift
+key  25    k        K        ł        none         shift
+key  26    l        L        Ł        none         shift
+key  27    ů        U+0022   $        none         -
+key  28    §        !        ß        none         -
+key  29    ;        dead(°)  none     none         -
+key  2B    dead(¨)  '        ¤        none         -
+key  2C    y        Y        none     none         shift
+key  2D    x        X        U+0023   none         shift
+key  2E    c        C        &        none         shift
+key  2F    v        V        @        none         shift
+key  30    b        B        U+007B   none         shift
+key  31    n        N        U+007D   none         shift
+key  32    m        M        none     none         shift
+key  33    ,        ?        <        none         -
+key  34    .        :        >        none         -
+key  35    -        _        *        none         -
+key  39    U+0020   U+0020   none     none         -
+key  56    \        |        none     none         -
+
+dead ˇ {
+    space = ˇ
+    C = Č
+    D = Ď
+    E = Ě
+    L = Ľ
+    N = Ň
+    R = Ř
+    S = Š
+    T = Ť
+    Z = Ž
+    c = č
+    d = ď
+    e = ě
+    l = ľ
+    n = ň
+    r = ř
+    s = š
+    t = ť
+    z = ž
+}
+
+dead ^ {
+    space = ^
+    A = Â
+    E = Ê
+    I = Î
+    O = Ô
+    U = Û
+    a = â
+    e = ê
+    i = î
+    o = ô
+    u = û
+}
+
+dead ˘ {
+    space = ˘
+    A = Ă
+    G = Ğ
+    a = ă
+    g = ğ
+}
+
+dead ° {
+    space = °
+    A = Å
+    U = Ů
+    a = å
+    u = ů
+}
+
+dead ˛ {
+    space = ˛
+    A = Ą
+    E = Ę
+    I = Į
+    U = Ų
+    a = ą
+    e = ę
+    i = į
+    u = ų
+}
+
+dead ` {
+    space = `
+    A = À
+    E = È
+    I = Ì
+    O = Ò
+    U = Ù
+    a = à
+    e = è
+    i = ì
+    o = ò
+    u = ù
+}
+
+dead ˙ {
+    space = ·
+    E = Ė
+    I = İ
+    Z = Ż
+    e = ė
+    i = ı
+    z = ż
+}
+
+dead ´ {
+    space = ´
+    A = Á
+    C = Ć
+    E = É
+    I = Í
+    L = Ĺ
+    N = Ń
+    O = Ó
+    R = Ŕ
+    S = Ś
+    U = Ú
+    Y = Ý
+    Z = Ź
+    a = á
+    c = ć
+    e = é
+    i = í
+    l = ĺ
+    n = ń
+    o = ó
+    r = ŕ
+    s = ś
+    u = ú
+    y = ý
+    z = ź
+}
+
+dead ˝ {
+    space = ˝
+    O = Ő
+    U = Ű
+    o = ő
+    u = ű
+}
+
+dead ¨ {
+    space = ¨
+    A = Ä
+    E = Ë
+    I = Ï
+    O = Ö
+    U = Ü
+    Y = Ÿ
+    a = ä
+    e = ë
+    i = ï
+    o = ö
+    u = ü
+    y = ÿ
+}
+
+dead ¸ {
+    space = ¸
+    C = Ç
+    G = Ģ
+    K = Ķ
+    L = Ļ
+    N = Ņ
+    R = Ŗ
+    S = Ş
+    T = Ţ
+    c = ç
+    g = ģ
+    k = ķ
+    l = ļ
+    n = ņ
+    r = ŗ
+    s = ş
+    t = ţ
+}

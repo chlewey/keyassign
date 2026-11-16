@@ -26,6 +26,9 @@ Rules shared by all Interlecto projects (branches, deployment, visual identity, 
 - `src/KeyAssign.Core/` — logic without UI. `Keys/ScancodeMap.cs` encodes and
   decodes the `Scancode Map` registry value; it doesn't touch the registry.
 - `tests/KeyAssign.Core.Tests/` — tests for Core.
+- `spikes/` — throwaway proofs of concept (not in the solution), written up in
+  `docs/spikes/`. S2 reads layouts by probing and only reads; spikes that install
+  layouts need the VM.
 - `site/` — project page for `keyassign.ilecto.app`: static, bilingual (ES at
   `/`, EN at `/en/`), no build step, system fonts and nothing loaded from other
   sites (R7.2). Same structure as Contarte's. Deploy from `site/` with
