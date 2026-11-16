@@ -71,7 +71,8 @@ R1.1, R1.7, R1.8, R3.1–R3.4, R3.8.
 
 R4.2–R4.8.
 
-- Build the layout DLL for x64, x86 and ARM64.
+- Build the layout DLL for x64, x86 and ARM64, written directly as S1 showed
+  (`docs/spikes/S1.md`), with no MSKLC or compiler.
 - Install it, swap it into the input list, and update it transparently.
 - Snapshot, restore and uninstall everything.
 
