@@ -19,9 +19,19 @@ internal static class LayoutRegistry
         }).ToList();
     }
 
-    /// <summary>The KLID behind an HKL from the user's input list; high word 0xFxxx is a "Layout Id".</summary>
+    /// <summary>Asks Windows for the current thread's KLID and decodes other HKLs.</summary>
     public static string KlidOf(IntPtr hkl)
     {
+        if (hkl == Native.GetKeyboardLayout(0))
+        {
+            // KL_NAMELENGTH includes the terminating null.
+            var name = new char[9];
+            if (Native.GetKeyboardLayoutNameW(name))
+            {
+                return new string(name, 0, 8);
+            }
+        }
+
         var value = (uint)hkl.ToInt64();
         var lang = value & 0xFFFF;
         var hi = value >> 16;

@@ -43,10 +43,12 @@ R1.2, R1.3, R1.4, R3.1, R3.3, R3.4, R5.1.
   column errors, and a writer that round-trips it.
 - Tests with sample layouts, including the Cyrillic layer example.
 
-### M2. Spikes
+### M2. Spikes (in progress)
 
-S1–S5, each written up in `docs/spikes/` with a working proof of concept on a
-throwaway VM, never on the main machine. Their findings may change M4–M7.
+S2 is complete: the [prototype](spikes/S2.md) reads the active, already loaded
+layout by probing. S1 demonstrated DLL generation. Its installation check
+belongs to S3. Experiments that install layouts run on a throwaway VM. The
+remaining findings may change M4–M7.
 
 ### M3. Read and view
 

@@ -2,17 +2,23 @@ using System.Runtime.InteropServices;
 
 namespace S2.ReadLayout;
 
-/// <summary>The few user32 calls the spike needs. None of them changes the system's input settings.</summary>
+/// <summary>Selects and probes layouts already loaded by Windows.</summary>
 internal static class Native
 {
-    public const uint KLF_NOTELLSHELL = 0x80;
     public const uint MAPVK_VSC_TO_VK_EX = 3;
 
-    [DllImport("user32.dll", CharSet = CharSet.Unicode, SetLastError = true)]
-    public static extern IntPtr LoadKeyboardLayoutW(string klid, uint flags);
+    [DllImport("user32.dll")]
+    public static extern IntPtr GetForegroundWindow();
 
     [DllImport("user32.dll")]
-    public static extern bool UnloadKeyboardLayout(IntPtr hkl);
+    public static extern uint GetWindowThreadProcessId(IntPtr window, IntPtr processId);
+
+    [DllImport("user32.dll")]
+    public static extern IntPtr GetKeyboardLayout(uint threadId);
+
+    [DllImport("user32.dll", CharSet = CharSet.Unicode, ExactSpelling = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool GetKeyboardLayoutNameW([Out] char[] name);
 
     [DllImport("user32.dll")]
     public static extern uint MapVirtualKeyExW(uint code, uint mapType, IntPtr hkl);

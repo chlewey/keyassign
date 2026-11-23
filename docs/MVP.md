@@ -121,22 +121,18 @@ dead ´ {
 The editor can **start from a layout installed on the machine**, the one in use
 by default, without reverse engineering and without changing anything.
 
-The plan, to be confirmed by spike S2:
+[Spike S2](spikes/S2.md) confirmed probing an already loaded layout. Get
+the active layout handle with `GetKeyboardLayout`, then use `MapVirtualKeyEx`
+and `ToUnicodeEx` with a synthetic key state. The return value identifies text
+and dead keys. Repeating the call with Caps Lock set reveals its effect. For
+composition, allow `ToUnicodeEx` to retain the pending dead key, probe each
+candidate base character, and clear the pending state between sequences.
 
-- **Primary: ask Windows.** Load the layout's handle (`LoadKeyboardLayout`)
-  and, for each scan code and each level, call `MapVirtualKeyEx` and
-  `ToUnicodeEx` with a synthetic key state and the "don't change state" flag.
-  The documented API reports characters, dead keys (a negative result), and
-  Caps Lock behaviour (by trying the same key with Caps Lock set). A dead key's
-  table is read by sending each candidate base character after it. Nothing is
-  parsed from the DLL, and it works for any layout Windows can load.
-- **Fallback: read the DLL's tables.** Layout DLLs export `KbdLayerDescriptor`,
-  and their data structures are documented in the Windows Driver Kit's `kbd.h`.
-  This is table parsing, not reverse engineering, and it recovers ligatures
-  and exact Caps Lock flags that probing can miss. It is only built if the
-  primary route proves lossy.
+Layout DLLs export `KbdLayerDescriptor`, whose structures are defined in the
+Windows Driver Kit's `kbd.h`. Reading those tables remains a possible source
+of metadata that probing cannot recover.
 
-If neither works for some layout, that layout is not offered and the editor
+If probing cannot read a layout, that layout is not offered and the editor
 says so; files and new layouts are unaffected. Layouts needing more than the
 MVP model (ligatures, chained dead keys) open with those entries kept as
 read-only and listed, never silently dropped.
@@ -182,8 +178,8 @@ read-only and listed, never silently dropped.
 
 1. **Model and text format** (M1): `Layout`, `Key`, `Level`, `DeadKey`; parser,
    writer, `docs/FORMAT.md`, round-trip tests.
-2. **Spike S2**: confirm the probing reader on several layouts (US, Spanish,
-   German, Russian, a layout with dead keys). Read-only, so it can run here.
+2. **Spike S2 (done)**: confirmed probing on the active layout and documented
+   the results and remaining representation gaps.
 3. **Keyboard view** (M3): ANSI and ISO drawing from one table of key positions.
 4. **Key dialog and dead key editor** (M4, without undo and the test area).
 5. **Open and save** wired to the model, with error reporting.
