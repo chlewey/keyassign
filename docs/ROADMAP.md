@@ -43,17 +43,23 @@ R1.2, R1.3, R1.4, R3.1, R3.3, R3.4, R5.1.
   column errors, and a writer that round-trips it.
 - Tests with sample layouts, including the Cyrillic layer example.
 
-### M2. Spikes
+### M2. Spikes (in progress)
 
-S1–S5, each written up in `docs/spikes/` with a working proof of concept on a
-throwaway VM, never on the main machine. Their findings may change M4–M7.
+S2 is complete: the [prototype](spikes/S2.md) reads the active, already loaded
+layout by probing. S1 demonstrated DLL generation. Its installation check
+belongs to S3. Experiments that install layouts run on a throwaway VM. The
+remaining findings may change M4–M7.
 
 ### M3. Read and view
 
 R1.1 (read-only), R2.1, R2.4, R2.5, R4.1.
 
-- Load the layout in use from its DLL.
+- Load the layout in use by probing it with `ToUnicodeEx`, as S2 showed
+  (`docs/spikes/S2.md`), behind an interface with a fake for tests.
 - Draw it on an ANSI or ISO keyboard, showing every level.
+- Read the keys S2 left out: keypad and other extended keys, and Ctrl levels.
+- Show the display name Windows shows, not the registry's `Layout Text`, and decide
+  what to do with layouts that use an IME.
 
 ### M4. Graphical editor
 
@@ -67,7 +73,8 @@ R1.1, R1.7, R1.8, R3.1–R3.4, R3.8.
 
 R4.2–R4.8.
 
-- Build the layout DLL for x64, x86 and ARM64.
+- Build the layout DLL for x64, x86 and ARM64, written directly as S1 showed
+  (`docs/spikes/S1.md`), with no MSKLC or compiler.
 - Install it, swap it into the input list, and update it transparently.
 - Snapshot, restore and uninstall everything.
 
@@ -79,7 +86,9 @@ keys and one-shot layers, and install it transparently.
 R3.5, R5.2, R5.3.
 
 - The prebuilt packs, with key choice and clash reports.
-- Chained dead keys, if S5 confirms they work.
+- Chained dead keys, if S5 confirms they work. S2 found four shipped layouts that
+  use them (German Extended E1 and E2, BÉPO, Cherokee Phonetic); the model and the
+  reader must handle a dead key whose result is another dead key.
 
 ### M7. Sustained layers
 
@@ -108,5 +117,10 @@ accessibility pass, and a landing page at `keyassign.ilecto.app`.
   against them?
 - **D3. Packaging:** unpackaged with an installer, as planned for Extension
   Icons, or MSIX? Installing layout DLLs needs administrator rights either way.
+- **D5. Caps Lock with a third value (from S2):** 24 shipped layouts give Caps
+  Lock a result that is neither the Normal nor the Shift one (Czech's `ě` / `2` /
+  `Ě`). Extend `CapsBehavior` with an explicit Caps Lock output (as Windows does
+  with `SGCAPS`), or read those keys with a warning and write them as the nearest
+  behaviour? Decide before M3 shows such layouts and before M5 writes them.
 - **D4. Default sustain key:** which key locks a layer by default, such as
   AltGr+Space or pressing the dead key twice?

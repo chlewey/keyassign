@@ -1,0 +1,122 @@
+# Key Assign layout file; see docs/FORMAT.md.
+layout "Spanish"
+
+#    scan  normal   shift    altgr    altgr+shift  caps
+key  02    1        !        |        none         -
+key  03    2        U+0022   @        none         -
+key  04    3        ·        U+0023   none         -
+key  05    4        $        dead(~)  none         -
+key  06    5        %        €        none         -
+key  07    6        &        ¬        none         -
+key  08    7        /        none     none         -
+key  09    8        (        none     none         -
+key  0A    9        )        none     none         -
+key  0B    0        U+003D   none     none         -
+key  0C    '        ?        none     none         -
+key  0D    ¡        ¿        none     none         -
+key  10    q        Q        none     none         shift
+key  11    w        W        none     none         shift
+key  12    e        E        €        none         shift
+key  13    r        R        none     none         shift
+key  14    t        T        none     none         shift
+key  15    y        Y        none     none         shift
+key  16    u        U        none     none         shift
+key  17    i        I        none     none         shift
+key  18    o        O        none     none         shift
+key  19    p        P        none     none         shift
+key  1A    dead(`)  dead(^)  [        none         -
+key  1B    +        *        ]        none         -
+key  1E    a        A        none     none         shift
+key  1F    s        S        none     none         shift
+key  20    d        D        none     none         shift
+key  21    f        F        none     none         shift
+key  22    g        G        none     none         shift
+key  23    h        H        none     none         shift
+key  24    j        J        none     none         shift
+key  25    k        K        none     none         shift
+key  26    l        L        none     none         shift
+key  27    ñ        Ñ        none     none         shift
+key  28    dead(´)  dead(¨)  U+007B   none         -
+key  29    º        ª        \        none         -
+key  2B    ç        Ç        U+007D   none         shift
+key  2C    z        Z        none     none         shift
+key  2D    x        X        none     none         shift
+key  2E    c        C        none     none         shift
+key  2F    v        V        none     none         shift
+key  30    b        B        none     none         shift
+key  31    n        N        none     none         shift
+key  32    m        M        none     none         shift
+key  33    ,        ;        none     none         -
+key  34    .        :        none     none         -
+key  35    -        _        none     none         -
+key  39    U+0020   U+0020   none     none         -
+key  56    <        >        none     none         -
+
+dead ~ {
+    space = ~
+    A = Ã
+    N = Ñ
+    O = Õ
+    a = ã
+    n = ñ
+    o = õ
+}
+
+dead ` {
+    space = `
+    A = À
+    E = È
+    I = Ì
+    O = Ò
+    U = Ù
+    a = à
+    e = è
+    i = ì
+    o = ò
+    u = ù
+}
+
+dead ^ {
+    space = ^
+    A = Â
+    E = Ê
+    I = Î
+    O = Ô
+    U = Û
+    a = â
+    e = ê
+    i = î
+    o = ô
+    u = û
+}
+
+dead ´ {
+    space = ´
+    A = Á
+    E = É
+    I = Í
+    O = Ó
+    U = Ú
+    Y = Ý
+    a = á
+    e = é
+    i = í
+    o = ó
+    u = ú
+    y = ý
+}
+
+dead ¨ {
+    space = ¨
+    A = Ä
+    E = Ë
+    I = Ï
+    O = Ö
+    U = Ü
+    a = ä
+    e = ë
+    i = ï
+    o = ö
+    u = ü
+    y = ÿ
+}
